@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Моя форма</h1>
+
+        <form action="" method="post">
+                {% csrf_token %}
+                {{ form }}
+<!--            <p>-->
+<!--                Имя: <input type="text" name="name">-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                Возраст: <input type="text" name="age">-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                Согласен на обработку данных: <input type="checkbox" name="agree">-->
+<!--            </p>-->
+            <button type="submit">Отправить</button>
+    </form>
+<!--</body>-->
+</html>

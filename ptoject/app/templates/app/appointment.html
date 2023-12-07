@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+    <section class="order">
+        <div class="container">
+            <div class="order_wrapper">
+                <div class="order__block">
+                    <h2 class="order__form-title">Make an appointment</h2>
+                    <form action="" class="order__form">
+                        <div class="order__row">
+                            <input type="text" class="text order__input" placeholder="Name">
+                            <input type="text" class="text order__input" placeholder="Email">
+                        </div>
+                        <div class="order__row">
+                            <input type="text" class="text order__input" placeholder="Phone number">
+                            <input type="text" class="text order__input" placeholder="Select service">
+                        </div>
+                        <textarea class="order__textarea">Tell us about the car needing service(s)</textarea>
+                        <button type="submit" class="order__btn">Make an Appointment</button>
+                    </form>
+                </div>
+                <div class="order__texts">
+                    <h1 class="order__title">Maxime placeat facere possimus omnis </h1>
+                    <p class="order__digit">17k</p>
+                    <p class="order__text">customers served (and counting)</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+</body>
+</html>

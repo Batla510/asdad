@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+</head>
+<body>
+    <form action="" method="post">
+    {% csrf_token %} {{ form.non_field.error }}
+    {{ form.as_p}}
+            <div>
+                <label for="{{ form.title.id_for_label}}">Название</label>
+                {{ form.title }}
+                <div>
+                    {{ form.title.errors }}
+                </div>
+             </div>
+            <div>
+                <label for="{{ form.content.id_for_label}}">Название</label>
+                {{ form.content }}
+                <div>
+                    {{ form.content.errors }}
+                </div>
+             </div>
+            <div>
+                <label for="{{ form.is_publisher.id_for_label}}">Название</label>
+                {{ form.is_publisher }}
+                <div>
+                    {{ form.publisher.errors }}
+                </div>
+             </div>
+        <div>
+                <label for="{{ form.category.id_for_label}}">Название</label>
+                {{ form.category }}
+                <div>
+                    {{ form.category.errors }}
+                </div>
+             </div>
+        <button>send</button>
+    </form>
+    <img src="{% static 'app/img/group.png' %}">
+</body>
+</html>
